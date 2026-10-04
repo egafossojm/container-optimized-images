@@ -1,0 +1,13 @@
+{
+  "name": "reference/php-runtime",
+  "description": "Production PHP-FPM reference application",
+  "type": "project",
+  "require": {
+    "php": "~8.5.0",
+    "monolog/monolog": "3.9.0"
+  },
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {}
+  }
+}

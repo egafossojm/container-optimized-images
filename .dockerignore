@@ -1,0 +1,16 @@
+# Used only when the repository root is the build context.
+# Each image builds from its own directory and has its own .dockerignore.
+.git
+**/.git
+**/.env
+**/.env.*
+**/*.pem
+**/*id_rsa*
+**/.ssh
+**/node_modules
+**/__pycache__
+**/*.pyc
+**/.venv
+**/target
+**/.idea
+**/.vscode

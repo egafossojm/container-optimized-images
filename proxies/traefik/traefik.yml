@@ -1,0 +1,27 @@
+# Static configuration. Anonymous telemetry stays off.
+global:
+  checkNewVersion: false
+  sendAnonymousUsage: false
+
+log:
+  level: INFO
+
+entryPoints:
+  web:
+    address: ":8080"
+    http:
+      # Drop headers whose names alias another header (X_Auth_User vs X-Auth-User).
+      aliasHeadersStrategy: delete
+
+ping:
+  entryPoint: web
+
+api:
+  dashboard: false
+  insecure: false
+
+# Add a file provider when you have routers. An empty providers map is
+# rejected by Traefik, so the key is omitted until there is a real file.
+# providers:
+#   file:
+#     filename: /etc/traefik/dynamic.yml

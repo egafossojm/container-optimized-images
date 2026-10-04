@@ -1,0 +1,12 @@
+.git
+**/.git
+**/.env
+**/.env.*
+**/*.pem
+**/*id_rsa*
+**/.ssh
+**/__pycache__
+**/*.pyc
+**/.venv
+**/.idea
+**/.vscode

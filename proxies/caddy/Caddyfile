@@ -1,0 +1,21 @@
+{
+	admin off
+	persist_config off
+	auto_https off
+}
+
+:8080 {
+	handle /health {
+		respond "ok" 200
+	}
+
+	# Production reverse proxy. Left inactive so this image starts with
+	# no backend on the network:
+	# handle {
+	# 	reverse_proxy app:8080
+	# }
+
+	handle {
+		respond "ok" 200
+	}
+}

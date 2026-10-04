@@ -1,0 +1,6 @@
+.git
+**/.git
+**/.env
+**/*.pem
+**/*id_rsa*
+**/.ssh
